@@ -69,17 +69,17 @@ This cycle continues continuously, similar to real ride-sharing systems.
 
 ## Sample Output
 
- Ride Sharing System Started
+- Ride Sharing System Started
 
-Driver 1 assigned to Passenger-1
-Driver 2 assigned to Passenger-2
-Driver 3 assigned to Passenger-3
+- Driver 1 assigned to Passenger-1
+- Driver 2 assigned to Passenger-2
+- Driver 3 assigned to Passenger-3
 
-Passenger-4 is waiting for a driver...
-Passenger-5 is waiting for a driver...
+- Passenger-4 is waiting for a driver...
+- Passenger-5 is waiting for a driver...
 
-Driver 1 is now available
-Driver 1 assigned to Passenger-4
+- Driver 1 is now available
+- Driver 1 assigned to Passenger-4
 
 > Output order may vary due to concurrent thread execution. This is expected behavior.
 
@@ -94,15 +94,57 @@ Driver 1 assigned to Passenger-4
 - This ensures **no double booking** and **safe concurrency**.
 
 ---
+## How to Run the Project
 
+### Prerequisites
+
+Make sure the following are installed on your system:
+
+- **Java JDK 8 or above**
+- Any Java IDE (IntelliJ IDEA / Eclipse / VS Code)  
+  **OR**
+- Command Line (Terminal / Command Prompt)
+
+---
+
+### Option 1: Run Using an IDE (Recommended)
+
+1. Open your IDE (IntelliJ / Eclipse / VS Code).
+2. Import or open the `RideSharingSystem` project folder.
+3. Ensure all `.java` files are in the same package (or default package).
+4. Locate the file:
+RideSharingApplication.java
+
+yaml
+Copy code
+5. Right-click on the file → **Run**.
+6. Observe the output in the console.
+
+---
+
+### Option 2: Run Using Command Line
+
+1. Open **Terminal / Command Prompt**.
+2. Navigate to the project directory:
+```bash
+cd RideSharingSystem
+Compile all Java files:
+
+bash
+Copy code
+javac *.java
+Run the main application:
+
+bash
+Copy code
+java RideSharingApplication
+The console will display concurrent passenger and driver activity.
+```
+
+---
 ## Future Enhancements
 
 - There will be more enchancements in the future.
   
 ---
-
-
-
-
-
 
